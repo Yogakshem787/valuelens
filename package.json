@@ -9,7 +9,7 @@
     "build:frontend": "cd frontend && npm run build",
     "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "setup": "npm install && cd frontend && npm install",
-    "start": "node backend/server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
