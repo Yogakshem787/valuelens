@@ -20,7 +20,7 @@ const USE_YAHOO = process.env.USE_YAHOO === 'true';
 
 // ---- NIFTY 500 STOCK LIST (Master list of Indian stocks) ----
 // In production, this would be fetched from NSE. Here's a curated list.
-const INDIAN_STOCKS_MASTER = require('./data/stock-master.json');
+const INDIAN_STOCKS_MASTER = require('./stock-master.json');
 
 async function fetchWithTimeout(url, options = {}, timeout = 15000) {
   const fetch = (await import('node-fetch')).default;
